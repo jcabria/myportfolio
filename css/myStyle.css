@@ -165,6 +165,10 @@ body {
 		color: white;
 	}
 
+	.mobile li {
+		padding-right: 10px;
+	}
+
 	.affix {
 		width: 100%;
 		background-color: rgba(0,0,0,0.9);
