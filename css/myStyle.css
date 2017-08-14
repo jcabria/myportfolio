@@ -51,6 +51,7 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	color: white;
+	position: relative;
 }
 
 
@@ -164,9 +165,9 @@ body {
 		color: orange;
 	}
 
-	.mobile li {
+	/*.mobile li {
 		padding-right: 10px;
-	}
+	}*/
 
 	.affix {
 		width: 100%;
@@ -228,6 +229,46 @@ body {
 
 #nav ul li:hover {
 	opacity: 1;
+}
+
+#nav ul li.active {
+	opacity: 1;
+}
+
+#nav {
+	position: relative;
+}
+
+.mobilecenter {
+	height: 70px;
+}
+
+.mobilecenter .nav-pills {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%,-50%);
+}
+
+.nav li a {
+	padding: 10px;
+}
+
+@media screen and (max-width: 442px){
+	.nav li a {
+		padding: 4px;
+	}
+}
+
+.nav-pills > li.active > a:hover,
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+	opacity: 1;
+	background-color: transparent;
+}
+
+.nav-pills > li.active > a {
+	background-color: transparent;
 }
 
 #nav a:link {

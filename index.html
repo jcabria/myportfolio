@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="css/myStyle.css">
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#sidebar" data-offset="20">
 
 	<header id="side-div">	
 		<div id="sidebar" data-spy="affix" data-offset-top="200">
@@ -28,8 +28,8 @@
 
 			<nav id="nav" >
 				<!-- screen size > 880px -->
-				<ul class="regular">
-					<li><a href="#profile"><h4>Profile</h4></a></li>
+				<ul class="regular nav nav-pills nav-stacked" role="tablist">
+					<li class="active"><a href="#profile"><h4>Profile</h4></a></li>
 					<li><a href="#skills"><h4>Skills</h4></a></li>
 					<li><a href="#expi"><h4>Experience</h4></a></li>
 					<li><a href="#proj"><h4>Projects</h4></a></li>
@@ -37,13 +37,15 @@
 				</ul>
 
 				<!-- screen size < 880px -->
-				<ul class="mobile">
-					<li><a href="#profile" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="fa fa-address-book-o"></i></a></li>
-					<li><a href="#skills" data-toggle="tooltip" data-placement="bottom" title="Skills"><i class="fa fa-cog"></i></a></li>
-					<li><a href="#expi" data-toggle="tooltip" data-placement="bottom" title="Experience"><i class="fa fa-black-tie"></i></a></li>
-					<li><a href="#proj" data-toggle="tooltip" data-placement="bottom" title="Projects"><i class="fa fa-book"></i></a></li>
-					<li><a href="#contact" data-toggle="tooltip" data-placement="bottom" title="Contact"><i class="fa fa-file-text"></i></a></li>
-				</ul>
+				<div class="mobilecenter">
+					<ul class="mobile nav nav-pills" role="tablist">
+						<li class="active"><a href="#profile" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="fa fa-address-book-o"></i></a></li>
+						<li><a href="#skills" data-toggle="tooltip" data-placement="bottom" title="Skills"><i class="fa fa-cog"></i></a></li>
+						<li><a href="#expi" data-toggle="tooltip" data-placement="bottom" title="Experience"><i class="fa fa-black-tie"></i></a></li>
+						<li><a href="#proj" data-toggle="tooltip" data-placement="bottom" title="Projects"><i class="fa fa-book"></i></a></li>
+						<li><a href="#contact" data-toggle="tooltip" data-placement="bottom" title="Contact"><i class="fa fa-file-text"></i></a></li>
+					</ul>
+				</div>
 
 
 
