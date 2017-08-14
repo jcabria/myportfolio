@@ -53,6 +53,7 @@ body {
 	color: white;
 }
 
+
 /* -------- side bar fixed on left side --------- */
 @media screen and (min-width: 880px) {
 	#side-div {
@@ -62,9 +63,12 @@ body {
 		min-width: 300px;
 		top: 0;
 		bottom: 0;
-		/*left: 0;*/
-		color: white;
+		color: orange;
 		background-color: rgba(0,0,0,0.5);
+	}
+
+	#logo {
+	padding-bottom: 20%;
 	}
 
 	#sidebar {
@@ -84,8 +88,6 @@ body {
 	#mySection {
 		width: 67%;
 		float: right;
-		/*padding-top: 6%;*/
-		/*margin-bottom: 20%;*/
 	}
 
 	.panel {
@@ -103,7 +105,6 @@ body {
 		text-align: center;
 		background-color: transparent;
 		max-width: 100%;
-		/*background-color: rgba(0,0,0,0.5);*/
 		margin-bottom: 20px;
 		padding: 20px;
 	}
@@ -120,12 +121,6 @@ body {
 		padding: 20px;
 	}
 
-	/*#contact {
-		height: 500px;
-		width: 100%;
-		overflow: auto;
-	}*/
-
 	#contact {
 		margin-bottom: 20%;
 	}
@@ -134,12 +129,16 @@ body {
 /* -------- side bar fixed on top --------- */
 @media screen and (max-width: 879px){
 	#side-div {
-		z-index: 1;
+		z-index: 1000;
 		position: fixed;
 		width: 100%;
 		top: 0;
-		color: white;
+		color: orange;
 		background-color: rgba(0,0,0,0.5);
+	}
+
+	#logo {
+	padding-bottom: 10px;
 	}
 
 	#sidebar {
@@ -162,7 +161,7 @@ body {
 	}
 
 	.mobile .fa {
-		color: white;
+		color: orange;
 	}
 
 	.mobile li {
@@ -181,8 +180,6 @@ body {
 		width: 100%;
 		float: right;
 		padding-top: 7%;
-		/*margin-top: 120px;*/
-		/*margin-bottom: 20%;*/
 	}
 
 	.panel {
@@ -192,7 +189,6 @@ body {
 
 	#mySection #content {
 		padding: 20px;
-		/*max-width: 660px;*/
 		position: relative;
 		margin: auto;
 	}
@@ -218,12 +214,6 @@ body {
 		padding: 20px;
 	}
 
-	/*#contact {
-		height: 500px;
-		width: 100%;
-		overflow: auto;
-	}*/
-
 	#contact {
 		margin-bottom: 20%;
 	}
@@ -242,18 +232,21 @@ body {
 
 #nav a:link {
 	text-decoration: none;
-	color: white;
+	color: orange;
 }
 
 .myInfo {
 	text-align: center;
-	/*font-family: "montserrat";*/
 	font-family: "cooper";
+}
+
+.myInfo h4 {
+	line-height: 135%;
 }
 
 .myTitle {
 	text-align: center;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	font-weight: bold;
 	padding-bottom: 10px;
 	font-family: "cooper";
@@ -263,24 +256,20 @@ body {
 .myExpi h4,
 .myExpi h5 {
 	font-family: "cooper";
+	text-align: center;
 }
 
-
-footer {
-	/*display: none;*/
+.myExpi .myTitle {
+	text-decoration: underline;
 }
+
 
 #footer {
-	/*margin-top: 30px;*/
 	padding: 15px;
-	/*color: white;*/
-	/*position: fixed;*/
-	/*display: none;*/
+	color: orange;
 	bottom: 0;
 	right: 0;
 	width: 100%;
-	/*height: 42px;*/
-	/*z-index: 10000;*/
 
 }
 
@@ -293,7 +282,7 @@ footer {
 }
 
 #footer .fa {
-	color: white;
+	color: orange;
 	opacity: 0.5;
 }
 
@@ -333,4 +322,90 @@ footer {
 .myContact .myCV div {
 	text-align: center;
 	padding: 50px;
+}
+
+.caps .mybox {
+	/*height: 350px;*/
+	height: auto;
+	width: auto;
+}
+
+/*.mybox {
+	position: relative;
+}
+
+.mycontainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}*/
+
+.capsdiv .img {
+	text-align: center;
+}
+
+.capsdiv {
+	position: relative;
+	min-width: 200px;
+	min-height: 290px;
+	overflow: hidden;
+	z-index: 2;
+	justify-content: center;
+}
+
+.capsdiv > div{
+	display: inline-block;
+	transition: all 800ms ease-in-out;
+}
+
+.capsdiv .img {
+	/*background: linear-gradient(
+		rgba(0,0,0,0.4),
+		rgba(0,0,100,0.3)
+		),
+		url("../image/capsproj2-.png") center no-repeat;
+	background-size: cover;*/
+	width: 100%;
+	/*height: auto;*/
+	/*min-height: 290px;*/
+	height: 100%;
+	position: absolute;
+	left: 0;
+	z-index: -1;
+	transform-origin: left;
+}
+
+.capsdiv .capsdesc {
+	padding: 15px 20px;
+	transform-origin: left;
+	max-width: 390px;
+	min-width: 200px;
+	height: auto;
+	/*max-height: 300px;
+	min-height: 190px;*/
+	/*width: 320px;*/
+	/*height: 100%;*/
+	transform: perspective(400px) rotateY(90deg);
+	font-family: "mont-alt";
+	background: rgb(32,35,45);
+	color: white;
+}
+
+.capsdiv:hover > .img {
+	transform: translateX(400px) scale(1.2);
+}
+
+.capsdiv:hover > .capsdesc {
+	transform: perspective(400px) rotateY(0deg);
+}
+
+.capsdiv .capsdesc a:link {
+	text-decoration: none;
+	color: orange;
+	opacity: 0.5;
+}
+
+.capsdiv .capsdesc a:hover {
+	opacity: 1;
 }

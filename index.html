@@ -7,10 +7,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <script src="sweetalert-master/dist/sweetalert.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="sweetalert-master/dist/sweetalert.css">
 
-	<title>selfLess - jcabs</title>
+	<title>iamjcabs</title>
 
 	<link rel="stylesheet" type="text/css" href="css/myStyle.css">
 
@@ -24,7 +23,7 @@
 				<h3>Web Developer</h3>
 			</div>
 
-			<br>
+			<!-- <br><br> -->
 
 			<nav id="nav" >
 				<!-- screen size > 880px -->
@@ -38,12 +37,14 @@
 
 				<!-- screen size < 880px -->
 				<ul class="mobile">
-					<li><a href="#profile"><i class="fa fa-address-book-o"></i></a></li>
-					<li><a href="#skills"><i class="fa fa-cog"></i></a></li>
-					<li><a href="#expi"><i class="fa fa-black-tie"></i></a></li>
-					<li><a href="#proj"><i class="fa fa-file-text"></i></a></li>
-					<li><a href="#contact"><i class="fa fa-book"></i></a></li>
+					<li><a href="#profile" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="fa fa-address-book-o"></i></a></li>
+					<li><a href="#skills" data-toggle="tooltip" data-placement="bottom" title="Skills"><i class="fa fa-cog"></i></a></li>
+					<li><a href="#expi" data-toggle="tooltip" data-placement="bottom" title="Experience"><i class="fa fa-black-tie"></i></a></li>
+					<li><a href="#proj" data-toggle="tooltip" data-placement="bottom" title="Projects"><i class="fa fa-book"></i></a></li>
+					<li><a href="#contact" data-toggle="tooltip" data-placement="bottom" title="Contact"><i class="fa fa-file-text"></i></a></li>
 				</ul>
+
+
 
 			</nav>
 		</div>
@@ -52,7 +53,7 @@
 	<section id="mySection">
 		<div id="content">
 			<div id="profile" class="panel">
-				<div >  <!-- class="box" -->
+				<div >  
 					<div class="myPic">
 						<img class="img-circle" src="image/joles.jpg">
 					</div>
@@ -61,8 +62,8 @@
 				<div class="box">
 					<div class="myInfo">
 						<h3>Hi! I'm glad you visited my profile.</h3> 
-						<!-- <br> -->
-						<h4>Just a few nonsense things about myself. At first, I'm silent type of person, observing people around me. But once you get to know me, you'll be surprise. I'm not that sporty type of person though i look like one. I love singing out loud while listening to music. I'm a daydreamer and night thinker. But that doesn't mean I want to be in Graveyard shift. Though, I used to be on that shift before, my spirit can't handle it no more!</h4>
+						
+						<h4>Just a few nonsense things about myself. I'm ambivert. I'm not that sporty type of person though i look like one. I love singing out loud while listening to music. I'm a daydreamer and night thinker. But that doesn't mean I want to be in Graveyard shift. Though, I used to be on that shift before, my spirit can't handle it no more!</h4>
 					</div>
 				</div>
 			</div>
@@ -88,7 +89,7 @@
 						</div>
 
 						<div class="progress">
-							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"> <strong><p>PHP = 85% </p></strong>
+							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <strong><p>PHP / MySQL = 80% </p></strong>
 							</div>
 						</div>
 
@@ -127,39 +128,60 @@
 					<div class="myProj">
 						<p class="myTitle">PROJECTS</p>
 						<hr>
-						<h4><strong>Click the image to witness the live version...</strong></h4>
-						<div class="row">
-							<div class="col-md-4 col-sm-12 col-xs-12">
-								<div class="myCaps">
-									<figure>
-										<a href="https://jcabria.github.io/Capstone-Project1/">
-										<img src="image/capsproj1-.png"></a>
-									</figure>
-									<figcaption><h5>Capstone Project 1</h5></figcaption>	
+						<div class="caps">
+							<div class="box">
+								<div class="mybox">
+									<div class="mycontainer">
+										<div class="capsdiv">
+											<div class="capsdesc">
+												<h2>Capstone Project 1</h2>
+												<p>My first ever website is a Blog about Bicol Province</p>
+												<a href="https://jcabria.github.io/Capstone-Project1/">Check my website here!</a>	
+											</div>
+											<div class="img">
+												<img src="image/capsproj1-.png" class="img-responsive">
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-12 col-xs-12">
-								<div class="myCaps">
-									<figure>
-										<a href="http://jclibrary.comli.com">
-										<img src="image/capsproj2-.png"></a>
-									</figure>
-									<figcaption><h5>Capstone Project 2</h5></figcaption>
+
+							<div class="box">
+								<div class="mybox">
+									<div class="mycontainer">
+										<div class="capsdiv">
+											<div class="capsdesc">
+												<h2>Capstone Project 2</h2>
+												<p>My second project is an automated Borrow-Return Book Transaction in Library</p>
+												<a href="http://jclibrary.comli.com">Check my website here!</a>
+											</div>
+											<div class="img">
+												<img src="image/capsproj2-.png" class="img-responsive">
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-12 col-xs-12">
-								<div class="myCaps">
-									<figure>
-										<a href="https://myplannr.herokuapp.com">
-										<img src="image/capsproj3-.png"></a>
-									</figure>
-									<figcaption><h5>Capstone Project 3</h5></figcaption>
+
+							<div class="box">
+								<div class="mybox">
+									<div class="mycontainer">
+										<div class="capsdiv">
+											<div class="capsdesc">
+												<h2>Capstone Project 3</h2>
+												<p>My third project is a Social Media Site where the user can post their plans and connect with friends</p>
+												<a href="https://myplannr.herokuapp.com">Check my website here!</a>
+											</div>
+											<div class="img">
+												<img src="image/capsproj3-.png" class="img-responsive">
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
 
 			<div id="contact">
@@ -197,7 +219,11 @@
 	</section>
 
 
-
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
