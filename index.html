@@ -4,24 +4,38 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-	<link rel="stylesheet" type="text/css" href="sweetalert-master/dist/sweetalert.css">
 
 	<title>iamjcabs</title>
 	<link rel="icon" href="image/cat.png">
 
+	
+	<!-- <link rel="stylesheet" type="text/css" href="animate.css-master/animate.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/mdb.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/myStyle.css">
-
 </head>
-<body data-spy="scroll" data-target="#sidebar" data-offset="20">
+<body data-spy="scroll" data-target="#sidebar" data-offset="10" style="overflow: scroll;">  
 
-	<header id="side-div">	
+	<header id="side-div" class="animated fadeInLeft">	
 		<div id="sidebar" data-spy="affix" data-offset-top="200">
 			<div id="logo">
-				<h1>Julie|<strong>CABRIA</strong></h1>
-				<h3>Web Developer</h3>
+				<h1>JULIE|<strong>CABRIA</strong></h1>
+				<h4>Aspiring Web Developer</h4>
+				<h5>
+					<em><a href="mailto:julie.cabria@gmail.com">julie.cabria@gmail.com</a></em>
+					<br><em class="mynum">09276336334</em>
+				</h5>
+				<div class="links">
+					<a href="https://www.facebook.com/julie.cabria.5" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+
+					<a href="https://github.com/jcabria" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+		          	<a href="https://www.plus.google.com" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+		          	<!-- <a href="mailto:julie.cabria@gmail.com"><i class="fa fa-google" aria-hidden="true"></i></a> -->
+		        </div>
+				
 			</div>
 
 			<!-- <br><br> -->
@@ -33,7 +47,7 @@
 					<li><a href="#skills"><h4>Skills</h4></a></li>
 					<li><a href="#expi"><h4>Experience</h4></a></li>
 					<li><a href="#proj"><h4>Projects</h4></a></li>
-					<li><a href="#contact"><h4>Contact</h4></a></li>
+					<li><a href="#resume"><h4>CV</h4></a></li>
 				</ul>
 
 				<!-- screen size < 880px -->
@@ -49,6 +63,7 @@
 
 
 
+
 			</nav>
 		</div>
 	</header>
@@ -56,17 +71,17 @@
 	<section id="mySection">
 		<div id="content">
 			<div id="profile" class="panel">
-				<div >  
-					<div class="myPic">
-						<img class="img-circle" src="image/joles.jpg">
-					</div>
-				</div>
+				<div class="box animated flipInX"> 
+					<div class="row"> 
+						<div class="myPic col-md-4 col-sm-4 col-xs-12">
+							<img  src="image/joles.gif">
+						</div>
 
-				<div class="box">
-					<div class="myInfo">
-						<h3>Hi! I'm glad you visited my profile.</h3> 
-						
-						<h4>Just a few nonsense things about myself. I'm ambivert. I'm not that sporty type of person though i look like one. I love singing out loud while listening to music. I'm a daydreamer and night thinker. But that doesn't mean I want to be in Graveyard shift. Though, I used to be on that shift before, my spirit can't handle it no more!</h4>
+						<div class="myInfo col-md-8 col-sm-8 col-xs-12">
+							<h3>Hi! I'm glad you visited my profile.</h3> 
+							
+							<h4>Just a few nonsense things about myself. I'm ambivert. I'm not that sporty type of person though i look like one. I love singing out loud while listening to music. I'm a daydreamer and night thinker. But that doesn't mean I want to be in Graveyard shift. Though, I used to be on that shift before, my spirit can't handle it no more!</h4>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -76,28 +91,33 @@
 					<div class="mySkill">
 						<p class="myTitle">SKILLS</p>
 						<hr>
+						<label for="htmlcss">HTML / CSS</label>
 						<div class="progress">
-							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <strong><p>HTML / CSS = 80% </p></strong>
+							<div id="htmlcss" class="animated slideInLeft progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <strong><p> 80% </p></strong>
 							</div>
 						</div>
 
+						<label for="bstrap">Bootstrap</label>
 						<div class="progress">
-							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> <strong><p>Bootstrap = 60% </p></strong>
+							<div id="bstrap" class="animated slideInLeft progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> <strong><p> 60% </p></strong>
 							</div>
 						</div>
 
+						<label for="jjs">JavaScript / jQuery</label>
 						<div class="progress">
-							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"> <strong><p>JavaScript / jQuery = 40% </p></strong>
+							<div id="jjs" class="animated slideInLeft progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"> <strong><p> 40% </p></strong>
 							</div>
 						</div>
 
+						<label for="phpsql">PHP / MySQL</label>
 						<div class="progress">
-							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <strong><p>PHP / MySQL = 80% </p></strong>
+							<div id="phpsql" class="animated slideInLeft progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <strong><p> 80% </p></strong>
 							</div>
 						</div>
 
+						<label for="lrvl">Laravel</label>
 						<div class="progress">
-							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <strong><p>Laravel = 80% </p></strong>
+							<div id="lrvl" class="animated slideInLeft progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <strong><p> 80% </p></strong>
 							</div>
 						</div>
 					</div>
@@ -106,8 +126,8 @@
 			</div>
 
 			<div id="expi">
-				<div class="box">
-					<div class="myExpi">
+				<div class="box ">
+					<div class="myExpi wow rubberBand animated ">
 						<p class="myTitle">WORK EXPERIENCE</p>
 						<!-- <hr> -->
 						<h4><strong>Website Updater - ICCT Colleges Foundation Inc.</strong></h4>
@@ -133,13 +153,13 @@
 						<hr>
 						<div class="caps">
 							<div class="box">
-								<div class="mybox">
+								<div class="mybox wow animated zoomIn">
 									<div class="mycontainer">
 										<div class="capsdiv">
 											<div class="capsdesc">
 												<h2>Capstone Project 1</h2>
 												<p>My first ever website is a Blog about Bicol Province</p>
-												<a href="https://jcabria.github.io/Capstone-Project1/">Check my website here!</a>	
+												<a href="https://jcabria.github.io/Capstone-Project1/" target="_blank">Check my website here!</a>	
 											</div>
 											<div class="img">
 												<img src="image/capsproj1-.png" class="img-responsive">
@@ -150,13 +170,13 @@
 							</div>
 
 							<div class="box">
-								<div class="mybox">
+								<div class="mybox wow animated zoomIn">
 									<div class="mycontainer">
 										<div class="capsdiv">
 											<div class="capsdesc">
 												<h2>Capstone Project 2</h2>
 												<p>My second project is an automated Borrow-Return Book Transaction in Library</p>
-												<a href="http://jclibrary.comli.com">Check my website here!</a>
+												<a href="http://jclibrary.comli.com" target="_blank">Check my website here!</a>
 											</div>
 											<div class="img">
 												<img src="image/capsproj2-.png" class="img-responsive">
@@ -167,13 +187,13 @@
 							</div>
 
 							<div class="box">
-								<div class="mybox">
+								<div class="mybox wow animated zoomIn">
 									<div class="mycontainer">
 										<div class="capsdiv">
 											<div class="capsdesc">
 												<h2>Capstone Project 3</h2>
 												<p>My third project is a Social Media Site where the user can post their plans and connect with friends</p>
-												<a href="https://myplannr.herokuapp.com">Check my website here!</a>
+												<a href="https://myplannr.herokuapp.com" target="_blank">Check my website here!</a>
 											</div>
 											<div class="img">
 												<img src="image/capsproj3-.png" class="img-responsive">
@@ -187,13 +207,14 @@
 				</div>
 			</div>
 
-			<div id="contact">
+			<div id="resume">
 				<div class="box">
 					<div class="myContact">
-						<p class="myTitle">Contact</p>
+						<!-- <p class="myTitle">Resume</p> -->
 						<div class="myCV">
-							<div>
-								<a href="cj-cv.docx" class="btn btn-warning" target="_blank">Here's a copy of my CV</a>
+							<div class="mycvdiv">
+								<h4 class="wow animated swing">Go hurry! Have a copy of my CV while I'm available!!!</h4>
+								<a href="cj-cv.pdf" class="btn btn-warning wow animated bounce infinite" target="_blank">Download</a>
 							</div>
 						</div>
 					</div>
@@ -206,33 +227,37 @@
 
 		<footer id="footer">
 			<div class="dev">
-				<div class="links">
-					<a href="https://www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-
-					<a href="https://github.com/jcabria"><i class="fa fa-github" aria-hidden="true"></i></a>
-
-		          	<a href="https://www.plus.google.com"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-		        </div>
-
 		        <span>Developed by <em>jcabria</em> | &copy; 2017</span><br>
 		        <span>made with <i class="fa fa-heart" aria-hidden="true"></i></span>
 			</div>
 		</footer>
 
+		<div class="backtotop">
+			<a  id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+		</div>
+
 	</section>
-
-
-	<script>
-		$(document).ready(function(){
-			$('[data-toggle="tooltip"]').tooltip();
-		});
-	</script>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/myJS.js"></script>
+
+<script>
+	new WOW().init();
+
+	window.addEventListener('scroll', function(e) {
+		if( $(window).scrollTop() <=  50) {
+			$('.wow').removeClass('animated');
+			$('.wow').removeAttr('style');
+			new	WOW().init();
+		}
+	});
+</script>
 
 </body>
 </html>

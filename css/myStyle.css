@@ -24,20 +24,27 @@
  	font-family: "julius-sans";
  }
 
- #logo h3 {
- 	font-family: "cooper";
+ #logo h4 {
+ 	font-family: "montserrat";
  }
 
  #nav h4	{
  	font-family: "mont-alt";
  }
 
- .mySkill p {
+ .mySkill p,
+ .mySkill label {
  	font-family: "montserrat";
+ }
+
+ .mySkill label {
+ 	font-weight: normal;
  }
 
  .mySkill .progress p {
  	color: black;
+ 	font-size: 14px;
+ 	padding-top: 4px;
  }
 
 
@@ -46,10 +53,11 @@ body {
 		rgba(0,0,0,0.4),
 		rgba(0,0,0,0.4)
 		),
-		url('../image/leaves.jpg');
+		url('../image/puertob1.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-position: center center;
 	color: white;
 	position: relative;
 }
@@ -65,11 +73,12 @@ body {
 		top: 0;
 		bottom: 0;
 		color: orange;
+		/*overflow: auto;*/
 		background-color: rgba(0,0,0,0.5);
 	}
 
 	#logo {
-	padding-bottom: 20%;
+	padding-bottom: 10%;
 	}
 
 	#sidebar {
@@ -82,7 +91,8 @@ body {
 	}
 
 	.affix {
-		width: 30%; 
+		/*width: 30%; */
+		position: static;
 	}
 
 	/*----------------mySection---------------*/
@@ -96,6 +106,7 @@ body {
 	}
 
 	#mySection #content {
+		padding-top: 40px;
 		padding-right: 20px;
 		max-width: 660px;
 		position: relative;
@@ -106,13 +117,15 @@ body {
 		text-align: center;
 		background-color: transparent;
 		max-width: 100%;
-		margin-bottom: 20px;
-		padding: 20px;
+		/*margin-bottom: 20px;*/
+		/*padding: 20px;*/
 	}
 
 	#profile .myPic img {
-		width: 40%;
-		height: 10%;
+		/*width: 100%;*/
+		width: 70%;
+		/*min-width: 30%;*/
+		height: auto;
 	}
 
 	.box {
@@ -122,8 +135,21 @@ body {
 		padding: 20px;
 	}
 
-	#contact {
+	#resume {
 		margin-bottom: 20%;
+	}
+
+	#side-div #logo .links {
+	font-size: 1.3em;
+	padding-right: 30%;
+	}
+
+	#side-div #logo h5 {
+		padding-right: 13%;
+	}
+
+	#side-div #logo h5 .mynum {
+		padding-right: 15%;
 	}
 }
 
@@ -180,7 +206,7 @@ body {
 	#mySection {
 		width: 100%;
 		float: right;
-		padding-top: 7%;
+		padding-top: 20%;
 	}
 
 	.panel {
@@ -198,14 +224,15 @@ body {
 		text-align: center;
 		background-color: transparent;
 		max-width: 100%;
-		margin-bottom: 20px;
-		padding: 20px;
+		/*margin-bottom: 20px;
+		padding: 20px;*/
 	}
 
 	#profile .myPic img {
-		width: 40%;
-		height: 10%;
-		padding: 20px;
+		max-width: 50%;
+		min-width: 30%;
+		height: auto;
+		/*padding: 20px;*/
 	}
 
 	.box {
@@ -215,8 +242,12 @@ body {
 		padding: 20px;
 	}
 
-	#contact {
+	#resume {
 		margin-bottom: 20%;
+	}
+
+	#side-div #logo .links {
+	font-size: 1.3em;
 	}
 }
 
@@ -251,7 +282,7 @@ body {
 }
 
 .nav li a {
-	padding: 10px;
+	padding: 5px;
 }
 
 @media screen and (max-width: 442px){
@@ -278,6 +309,7 @@ body {
 
 .myInfo {
 	text-align: center;
+	justify-content: center;
 	font-family: "cooper";
 }
 
@@ -318,8 +350,20 @@ body {
 	text-align: center;
 }
 
-#footer .dev .links {
-	font-size: 1.4em;
+
+#side-div #logo h5 a:link {
+	color: orange;
+} 
+
+#side-div #logo .fa,
+#side-div #logo h5 {
+	color: orange;
+	opacity: 0.5;
+}
+
+#side-div #logo .fa:hover,
+#side-div #logo h5:hover {
+	opacity: 1;
 }
 
 #footer .fa {
@@ -331,26 +375,6 @@ body {
 	opacity: 1;
 }
 
-.myCaps {
-	text-align: center;
-	justify-content: center;
-	border: 1px solid white;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.myCaps img {
-	height: 100%;
-	width: 100%;
-	filter: grayscale(1);
-	padding: 20px;
-}
-
-.myCaps img:hover {
-	filter: grayscale(0);
-	transition: 1s;
-}
-
 .myProj h4,
 .myProj figcaption {
 	font-family: "cooper";
@@ -360,7 +384,7 @@ body {
 	border: 1px solid white;
 }
 
-.myContact .myCV div {
+.myContact .myCV .mycvdiv {
 	text-align: center;
 	padding: 50px;
 }
@@ -440,7 +464,8 @@ body {
 	transform: perspective(400px) rotateY(0deg);
 }
 
-.capsdiv .capsdesc a:link {
+.capsdiv .capsdesc a:link,
+.capsdiv .capsdesc a:visited {
 	text-decoration: none;
 	color: orange;
 	opacity: 0.5;
@@ -448,4 +473,67 @@ body {
 
 .capsdiv .capsdesc a:hover {
 	opacity: 1;
+}
+
+.backtotop {
+	position: relative;
+}
+
+#return-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	/*background-color: orange;*/ /*#FF9900*/
+	background: rgba(255,165,0,0.7);  /*orange*/
+	/*background: rgba(0,0,0,0.7);*/
+	width: 50px;
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+	display: none;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	z-index: 99;
+}
+
+#return-to-top i {
+	color: white;
+	margin: 0;
+	position: relative;
+	left: 15px;
+	top: 13px;
+	font-size: 20px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+	background: rgba(0,0,0,0.9);
+}
+
+#return-to-top:hover i {
+	color: orange;
+	top: 5px;
+}
+
+.progress {
+	height: 28px;
+}
+
+.progress .progress-bar {
+	background-color: orange;
+	height: 28px;
+}
+
+.wow {
+	visibility: hidden;
 }
