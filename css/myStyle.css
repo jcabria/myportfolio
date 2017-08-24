@@ -326,14 +326,17 @@ body {
 }
 
 .myExpi,
-.myExpi h4,
 .myExpi h5 {
 	font-family: "cooper";
 	text-align: center;
 }
 
+.myExpi h4 {
+	font-family: "montserrat";
+}
+
 .myExpi .myTitle {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 
