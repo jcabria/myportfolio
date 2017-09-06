@@ -1,0 +1,895 @@
+
+@font-face {
+    font-family: "julius-sans";
+    src: url(../fonts/fonts/julius_sans_one/JuliusSansOne-Regular.ttf);
+  }
+
+@font-face {
+    font-family: "cooper";
+    src: url(../fonts/fonts/cooper-hewitt/CooperHewitt-Light.otf);
+  }
+
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/fonts/montserrat/Montserrat-Light.ttf);
+  }
+
+
+@font-face {
+    font-family: "mont-alt";
+    src: url(../fonts/fonts/montserrat_alternates/MontserratAlternates-Light.ttf);
+  }
+/*------------------------------------------*/
+ #logo h1 {
+ 	font-family: "julius-sans";
+ }
+
+ #logo h4 {
+ 	font-family: "montserrat";
+ }
+
+ #nav h4	{
+ 	font-family: "mont-alt";
+ }
+
+ .mySkill p,
+ .mySkill label {
+ 	font-family: "montserrat";
+ }
+/*------------------------------------------*/
+body {
+	background-image: linear-gradient(
+		rgba(0,0,0,0.4),
+		rgba(0,0,0,0.4)
+		),
+		url('../image/puertob1.jpg');
+	background-size: cover;
+	background-color: rgba(0,0,0,0.8);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: white;
+	position: relative;
+}
+/*------------------------------------------*/
+#side-div #logo h5 a:link {
+	color: orange;
+} 
+
+#side-div #logo .fa,
+#side-div #logo h5 {
+	color: orange;
+	opacity: 0.5;
+}
+
+#side-div #logo .fa:hover,
+#side-div #logo h5:hover {
+	opacity: 1;
+}
+/*------------------------------------------*/
+#nav ul li {
+	list-style: none;
+	opacity: 0.5;
+}
+
+#nav ul li:hover {
+	opacity: 1;
+}
+
+#nav ul li.active {
+	opacity: 1;
+}
+
+#nav {
+	position: relative;
+}
+
+.mobilecenter {
+	height: 70px;
+}
+
+.mobilecenter .nav-pills {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%,-50%);
+}
+
+.nav li a {
+	padding: 5px;
+}
+
+@media screen and (max-width: 442px){
+	.nav li a {
+		padding: 4px;
+	}
+}
+
+.nav-pills > li.active > a:hover,
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+	opacity: 1;
+	background-color: transparent;
+}
+
+.nav-pills > li.active > a {
+	background-color: transparent;
+}
+
+#nav a:link {
+	text-decoration: none;
+	color: orange;
+}
+/*------------------------------------------*/
+.myInfo {
+	text-align: left;
+	justify-content: center;
+	font-family: "cooper";
+}
+
+.myInfo h3 {
+	text-align: center;
+}
+
+.myInfo span {
+	line-height: 135%;
+	font-size: 1.1em;
+}
+/*------------------------------------------*/
+.myTitle {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 10px;
+	font-family: "cooper";
+}
+/*------------------------------------------*/
+ .mySkill label {
+ 	font-weight: normal;
+ }
+
+ .mySkill .progress p {
+ 	color: black;
+ 	font-size: 14px;
+ 	padding-top: 4px;
+ }
+
+ .mySkill .progress {
+	height: 28px;
+}
+
+ .mySkill .progress .progress-bar {
+	background-color: orange;
+	height: 28px;
+}
+/*------------------------------------------*/
+.myExpi,
+.myExpi h5 {
+	font-family: "cooper";
+	text-align: center;
+}
+
+.myExpi h4 {
+	font-family: "montserrat";
+}
+/*------------------------------------------*/
+.myContact .myCV {
+	border: 1px solid white;
+}
+
+.myContact .myCV .mycvdiv {
+	text-align: center;
+	padding: 50px;
+}
+/*------------------------------------------*/
+#footer {
+	padding: 15px;
+	color: orange;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+}
+
+#footer .dev {
+	text-align: center;
+}
+
+#footer .fa {
+	color: orange;
+	opacity: 0.5;
+}
+
+#footer .fa:hover {
+	opacity: 1;
+}
+/*------------------------------------------*/
+.backtotop {
+	position: relative;
+}
+
+#return-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	/*background-color: orange;*/ /*#FF9900*/
+	background: rgba(255,165,0,0.7);  /*orange*/
+	width: 50px;
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+	display: none;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	z-index: 99;
+}
+
+#return-to-top i {
+	color: white;
+	margin: 0;
+	position: relative;
+	left: 15px;
+	top: 13px;
+	font-size: 20px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+	background: rgba(0,0,0,0.9);
+}
+
+#return-to-top:hover i {
+	color: orange;
+	top: 5px;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* ------------- side bar fixed on left side ------------- */
+@media screen and (min-width: 880px) {
+	#side-div {
+		position: fixed;
+		height: 100%;
+		width: 30%;
+		min-width: 300px;
+		top: 0;
+		bottom: 0;
+		color: orange;
+		overflow: auto;
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	#logo {
+	padding-bottom: 10%;
+	}
+
+	#sidebar {
+		text-align: right;
+		padding: 75px 40px 40px 40px;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	.affix {
+		/*width: 30%; */
+		position: static;
+	}
+
+	#side-div #logo .links {
+	font-size: 1.3em;
+	padding-right: 30%;
+	}
+
+	#side-div #logo h5 {
+		padding-right: 13%;
+	}
+
+	#side-div #logo h5 .mynum {
+		padding-right: 15%;
+	}
+
+	/*----------------mySection---------------*/
+	#mySection {
+		width: 67%;
+		float: right;
+	}
+
+	.panel {
+		background-color: transparent;
+	}
+
+	#mySection #content {
+		padding-top: 40px;
+		padding-right: 20px;
+		max-width: 660px;
+		position: relative;
+		margin: auto;
+	}
+
+	#profile .myPic {
+		text-align: center;
+		background-color: transparent;
+		max-width: 100%;
+	}
+
+	#profile .myPic img {
+		width: 30%;
+		height: auto;
+	}
+
+	.box {
+		max-width: 100%;
+		background-color: rgba(0,0,0,0.5);
+		margin-bottom: 40px;
+		padding: 20px;
+	}
+
+	#resume {
+		margin-bottom: 30%;
+	}
+
+
+	/* ------------ CAPS PROJ STYLE ON LEFT --------------*/
+
+		.caps .mybox {
+			height: auto;
+			width: auto;
+		}
+
+		.capsdiv .img {
+			text-align: center;
+		}
+
+		.capsdiv {
+			position: relative;
+			min-width: 200px;
+			min-height: 290px;
+			overflow: hidden;
+			z-index: 2;
+			justify-content: center;
+		}
+
+		.capsdiv > div{
+			display: inline-block;
+			transition: all 800ms ease-in-out;
+		}
+
+		.capsdiv .img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			z-index: -1;
+			transform-origin: left;
+		}
+
+		.capsdiv .capsdesc {
+			padding: 15px 20px;
+			transform-origin: left;
+			max-width: 390px;
+			min-width: 200px;
+			height: auto;
+			transform: perspective(400px) rotateY(90deg);
+			font-family: "mont-alt";
+			background: rgb(32,35,45);
+			color: white;
+		}
+
+		.capsdiv:hover > .img {
+			transform: translateX(400px) scale(1.2);
+		}
+
+		.capsdiv:hover > .capsdesc {
+			transform: perspective(400px) rotateY(0deg);
+		}
+
+		.capsdiv .capsdesc a:link,
+		.capsdiv .capsdesc a:visited {
+			text-decoration: none;
+			color: orange;
+			opacity: 0.5;
+		}
+
+		.capsdiv .capsdesc a:hover {
+			opacity: 1;
+		}
+
+	/*----------------------------------------------------*/
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* ------------------ side bar fixed on top ------------------ */
+@media screen and (max-width: 879px) and (min-width: 427px) {
+	#side-div {
+		z-index: 1000;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		color: orange;
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	#logo {
+	padding-bottom: 10px;
+	}
+
+	#sidebar {
+		text-align: center;
+		padding: 5px;
+	}
+
+	.regular {
+		display: none;
+	}
+
+	.mobile li {
+		display: inline-block;
+		font-size: 1.6em;
+	}
+
+	.mobile	{
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.mobile .fa {
+		color: orange;
+	}
+
+	#side-div #logo .links {
+	font-size: 1.3em;
+	}
+
+	.affix {
+		width: 100%;
+		background-color: rgba(0,0,0,0.9);
+		transition: 0.8s;
+		z-index: 100;
+	}
+
+	/*----------------mySection---------------*/
+	#mySection {
+		width: 100%;
+		float: right;
+		padding-top: 20%;
+	}
+
+	.panel {
+		padding-top: 170px;
+		background-color: transparent;
+	}
+
+	#mySection #content {
+		padding: 20px;
+		position: relative;
+		margin: auto;
+	}
+
+	#profile .myPic {
+		text-align: center;
+		background-color: transparent;
+		max-width: 100%;
+	}
+
+	#profile .myPic img {
+		width: 30%;
+		height: auto;
+	}
+
+	.box {
+		max-width: none;
+		background-color: rgba(0,0,0,0.5);
+		margin-bottom: 40px;
+		padding: 20px;
+	}
+
+	#resume {
+		margin-bottom: 30%;
+	}
+
+	/* ------------ CAPS PROJ STYLE ON TOP --------------*/
+
+		.caps .mybox {
+			height: auto;
+			width: auto;
+		}
+
+		.capsdiv .img {
+			text-align: center;
+		}
+
+		.capsdiv {
+			position: relative;
+			min-width: 200px;
+			min-height: 290px;
+			overflow: hidden;
+			z-index: 2;
+			justify-content: center;
+		}
+
+		.capsdiv > div{
+			display: inline-block;
+			transition: all 800ms ease-in-out;
+		}
+
+		.capsdiv .img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			z-index: -1;
+			transform-origin: left;
+		}
+
+		.capsdiv .capsdesc {
+			padding: 15px 20px;
+			transform-origin: left;
+			min-width: 250px;
+			max-width: 380px;
+			height: 100%;
+			transform: perspective(400px) rotateY(90deg);
+			font-family: "mont-alt";
+			background: rgb(32,35,45);
+			color: white;
+		}
+
+		.capsdiv:hover > .img {
+			transform: translateX(400px) scale(1.2);
+		}
+
+		.capsdiv:hover > .capsdesc {
+			transform: perspective(400px) rotateY(0deg);
+		}
+
+		.capsdiv .capsdesc a:link,
+		.capsdiv .capsdesc a:visited {
+			text-decoration: none;
+			color: orange;
+			opacity: 0.5;
+		}
+
+		.capsdiv .capsdesc a:hover {
+			opacity: 1;
+		}
+
+	/*--------------------------------------------*/
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/****************** CAPS. PROJ CUSTOM STYLE *****************/
+/*321px*/
+@media screen and (max-width: 426px) and (min-width: 391px){
+	#side-div {
+		z-index: 1000;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		color: orange;
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	#logo {
+	padding-bottom: 10px;
+	}
+
+	#sidebar {
+		text-align: center;
+		padding: 5px;
+	}
+
+	.regular {
+		display: none;
+	}
+
+	.mobile li {
+		display: inline-block;
+		font-size: 1.6em;
+	}
+
+	.mobile	{
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.mobile .fa {
+		color: orange;
+	}
+
+	#side-div #logo .links {
+	font-size: 1.3em;
+	}
+
+	.affix {
+		width: 100%;
+		background-color: rgba(0,0,0,0.9);
+		transition: 0.8s;
+		z-index: 100;
+	}
+
+	/*----------------mySection---------------*/
+	#mySection {
+		width: 100%;
+		float: right;
+		padding-top: 20%;
+	}
+
+	.panel {
+		padding-top: 170px;
+		background-color: transparent;
+	}
+
+	#mySection #content {
+		padding: 20px;
+		position: relative;
+		margin: auto;
+	}
+
+	#profile .myPic {
+		text-align: center;
+		background-color: transparent;
+		max-width: 100%;
+	}
+
+	#profile .myPic img {
+		width: 30%;
+		height: auto;
+	}
+
+	.box {
+		max-width: none;
+		background-color: rgba(0,0,0,0.5);
+		margin-bottom: 40px;
+		padding: 20px;
+	}
+
+	#resume {
+		margin-bottom: 30%;
+	}
+
+	/* ------------ CAPS PROJ STYLE ON TOP --------------*/
+
+		.caps .mybox {
+			height: auto;
+			width: auto;
+		}
+
+			.capsdiv {
+				position: relative;
+				min-width: 200px;
+				min-height: 250px;
+				/*height: 100%;*/
+				overflow: hidden;
+				z-index: 2;
+				justify-content: center;
+			}
+
+			.capsdiv .capsdesc {
+				padding: 15px 20px;
+				transform-origin: left;
+				max-width: 250px;
+				min-width: 200px;
+				height: 100%;
+				transform: perspective(260px) rotateY(90deg);
+				font-family: "mont-alt";
+				background: rgb(32,35,45);
+				color: white;
+			}
+
+			.capsdiv:hover > .img {
+				transform: translateX(260px) scale(1.2);
+			}
+
+			.capsdiv:hover > .capsdesc {
+				transform: perspective(260px) rotateY(0deg);
+			}
+
+		.capsdiv .img {
+			text-align: center;
+		}
+
+		.capsdiv > div{
+			display: inline-block;
+			transition: all 800ms ease-in-out;
+		}
+
+		.capsdiv .img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			z-index: -1;
+			transform-origin: left;
+		}
+
+		.capsdiv .capsdesc a:link,
+		.capsdiv .capsdesc a:visited {
+			text-decoration: none;
+			color: orange;
+			opacity: 0.5;
+		}
+
+		.capsdiv .capsdesc a:hover {
+			opacity: 1;
+		}
+
+	/*---------------------------------------------------*/
+
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/*320px*/
+@media screen and (max-width: 390px)  {
+	#side-div {
+		z-index: 1000;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		color: orange;
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	#logo {
+	padding-bottom: 10px;
+	}
+
+	#sidebar {
+		text-align: center;
+		padding: 5px;
+	}
+
+	.regular {
+		display: none;
+	}
+
+	.mobile li {
+		display: inline-block;
+		font-size: 1.6em;
+	}
+
+	.mobile	{
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.mobile .fa {
+		color: orange;
+	}
+
+	#side-div #logo .links {
+	font-size: 1.3em;
+	}
+
+	.affix {
+		width: 100%;
+		background-color: rgba(0,0,0,0.9);
+		transition: 0.8s;
+		z-index: 100;
+	}
+
+	/*----------------mySection---------------*/
+	#mySection {
+		width: 100%;
+		float: right;
+		padding-top: 20%;
+	}
+
+	.panel {
+		padding-top: 170px;
+		background-color: transparent;
+	}
+
+	#mySection #content {
+		padding: 20px;
+		position: relative;
+		margin: auto;
+	}
+
+	#profile .myPic {
+		text-align: center;
+		background-color: transparent;
+		max-width: 100%;
+	}
+
+	#profile .myPic img {
+		width: 30%;
+		height: auto;
+	}
+
+	.box {
+		max-width: none;
+		background-color: rgba(0,0,0,0.5);
+		margin-bottom: 40px;
+		padding: 20px;
+	}
+
+	#resume {
+		margin-bottom: 30%;
+	}
+
+	/* ------------ CAPS PROJ STYLE ON TOP --------------*/
+
+		.caps .mybox {
+			height: auto;
+			width: auto;
+		}
+
+			.capsdiv {
+				position: relative;
+				min-width: 200px;
+				min-height: 200px;
+				overflow: hidden;
+				z-index: 2;
+				justify-content: center;
+			}
+
+			.capsdiv .capsdesc {
+				padding: 10px 15px;
+				transform-origin: left;
+				max-width: 180px;
+				min-width: 150px;
+				height: 100%;
+				transform: perspective(200px) rotateY(90deg);
+				font-family: "mont-alt";
+				background: rgb(32,35,45);
+				color: white;
+			}
+
+			.capsdiv:hover > .img {
+				transform: translateX(200px) scale(1.2);
+			}
+
+			.capsdiv:hover > .capsdesc {
+				transform: perspective(200px) rotateY(0deg);
+			}
+
+		.capsdiv .img {
+			text-align: center;
+		}
+
+		.capsdiv > div{
+			display: inline-block;
+			transition: all 800ms ease-in-out;
+		}
+
+		.capsdiv .img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			z-index: -1;
+			transform-origin: left;
+		}
+
+		.capsdiv .capsdesc a:link,
+		.capsdiv .capsdesc a:visited {
+			text-decoration: none;
+			color: orange;
+			opacity: 0.5;
+		}
+
+		.capsdiv .capsdesc a:hover {
+			opacity: 1;
+		}
+
+	/*---------------------------------------------------*/
+}
+
+/* ******************************************************** */
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+
