@@ -121,6 +121,11 @@ body {
 	color: orange;
 }
 /*------------------------------------------*/
+#profile {
+	padding-bottom: 20px;
+	border-bottom: 2px dashed orange;
+}
+
 .myInfo {
 	text-align: left;
 	justify-content: center;
@@ -326,6 +331,7 @@ body {
 	#profile .myPic img {
 		width: 30%;
 		height: auto;
+		border-radius: 50%;
 	}
 
 	.box {
@@ -486,6 +492,7 @@ body {
 	#profile .myPic img {
 		width: 30%;
 		height: auto;
+		border-radius: 50%;
 	}
 
 	.box {
@@ -646,6 +653,7 @@ body {
 	#profile .myPic img {
 		width: 30%;
 		height: auto;
+		border-radius: 50%;
 	}
 
 	.box {
@@ -807,6 +815,7 @@ body {
 	#profile .myPic img {
 		width: 30%;
 		height: auto;
+		border-radius: 50%;
 	}
 
 	.box {
