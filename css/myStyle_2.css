@@ -26,6 +26,7 @@
 
  #logo h4 {
  	font-family: "montserrat";
+ 	padding-right: 20px;
  }
 
  #nav h4	{
@@ -85,7 +86,7 @@ body {
 }
 
 .mobilecenter {
-	height: 70px;
+	height: 55px;
 }
 
 .mobilecenter .nav-pills {
@@ -293,15 +294,15 @@ body {
 
 	#side-div #logo .links {
 	font-size: 1.3em;
-	padding-right: 30%;
+	padding-right: 13%;
 	}
 
 	#side-div #logo h5 {
-		padding-right: 13%;
+		padding-right: 6%;
 	}
 
 	#side-div #logo h5 .mynum {
-		padding-right: 15%;
+		padding-right: 6%;
 	}
 
 	/*----------------mySection---------------*/
@@ -756,7 +757,7 @@ body {
 
 	#sidebar {
 		text-align: center;
-		padding: 5px;
+		/*padding: 5px;*/
 	}
 
 	.regular {
@@ -901,4 +902,36 @@ body {
 
 /* ///////////////////////////////////////////////////////////////////// */
 
+@media screen and (max-width: 1441px)  {
+	#side-div #logo h5 {
+		padding-right: 12%;
+	}
 
+	#side-div #logo h5 .mynum {
+		padding-right: 12%;
+	}
+
+	#side-div #logo .links {
+		padding-right: 27%;
+	}
+}
+
+@media screen and (max-width: 1023px)  {
+	#side-div #logo h5 {
+		padding-right: 0%;
+	}
+
+	#side-div #logo h5 .mynum {
+		padding-right: 0%;
+	}
+
+	#side-div #logo .links {
+		padding-right: 0%;
+	}
+}
+
+@media screen and (max-width: 1024px)  {
+	#logo h4 {
+		padding-right: 0;
+	}
+}
