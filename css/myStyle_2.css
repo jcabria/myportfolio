@@ -35,7 +35,7 @@
 
  .mySkill p,
  .mySkill label {
- 	font-family: "montserrat";
+ 	font-family: "cooper";
  }
 /*------------------------------------------*/
 body {
@@ -43,13 +43,14 @@ body {
 		rgba(0,0,0,0.4),
 		rgba(0,0,0,0.4)
 		),
-		url('../image/puertob1.jpg');
+		url('../image/bg1.jpeg');
 	background-size: cover;
-	background-color: rgba(0,0,0,0.8);
+	/*background-color: rgba(0,0,0,0.8);*/
+	background-color: #1f1f1f;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center center;
-	color: white;
+	color: #8ccdc2;
 	position: relative;
 }
 
@@ -60,12 +61,12 @@ body {
 }
 /*------------------------------------------*/
 #side-div #logo h5 a:link {
-	color: orange;
+	color: #8ccdc2;
 } 
 
 #side-div #logo .fa,
 #side-div #logo h5 {
-	color: orange;
+	color: #8ccdc2;
 	opacity: 0.5;
 }
 
@@ -125,22 +126,27 @@ body {
 
 #nav a:link {
 	text-decoration: none;
-	color: orange;
+	color: #8ccdc2;
 }
 /*------------------------------------------*/
 #profile {
-	padding-bottom: 20px;
-	border-bottom: 2px dashed orange;
+	/*padding-bottom: 20px;*/
+	/*border-bottom: 2px dashed #8ccdc2;*/
+	margin-bottom: 160px;
 }
 
 .myInfo {
 	text-align: left;
 	justify-content: center;
-	font-family: "cooper";
+	/*font-family: "cooper";*/
+	font-family: "mont-alt";
+	margin-bottom: 40px;
+	padding: 20px;
 }
 
 .myInfo h3 {
 	text-align: center;
+	font-family: "montserrat"!important;
 }
 
 .myInfo span {
@@ -171,32 +177,98 @@ body {
 }
 
  .mySkill .progress .progress-bar {
-	background-color: orange;
+	background-color: #6697a7;
 	height: 28px;
 }
+
+ .mySkill .tech-skills {
+ 	text-align: center;
+ }
+
+ .mySkill .tech-skills span {
+ 	margin: 5px;
+ 	line-height: 2.2;
+ }
 /*------------------------------------------*/
 .myExpi,
-.myExpi h5 {
+.myExpi h5,
+.myExpi .company,
+.myEduc,
+.myEduc .school {
 	font-family: "cooper";
 	text-align: center;
 }
 
-.myExpi h4 {
+.myExpi .company,
+.myEduc .school {
+	font-size: 15px;
+}
+
+.myExpi h4.
+.myEduc h4 {
 	font-family: "montserrat";
 }
 /*------------------------------------------*/
-.myContact .myCV {
+/*.myContact .myCV {
 	border: 1px solid white;
+}*/
+
+.myContact .mycvdiv h4 {
+	font-family: "cooper";
 }
 
 .myContact .myCV .mycvdiv {
 	text-align: center;
 	padding: 50px;
 }
+
+
+.btn-clickme {
+  color: #fff;
+  background-color: #8ccdc2;
+  border-color: #8ccdc2;
+}
+.btn-clickme:focus,
+.btn-clickme.focus {
+  color: #8ccdc2!important;
+  background-color: #1f1f1f!important;
+  border-color: #8ccdc2!important;
+}
+.btn-clickme:hover {
+  color: #8ccdc2!important;
+  background-color: #1f1f1f!important;
+  border-color: #8ccdc2!important;
+  font-weight: bold;
+}
+.btn-clickme:active,
+.btn-clickme.active,
+.open > .dropdown-toggle.btn-clickme {
+  color: #8ccdc2!important;
+  background-color: #1f1f1f!important;
+  border-color: #8ccdc2!important;
+ }
+
+ .myContact .mycvdiv .links {
+ 	font-size: 1.8em;
+ }
+
+ .myContact .mycvdiv .links a {
+ 	padding: 4px;
+ }
+
+  .myContact .mycvdiv .links .fa {
+ 	color: #8ccdc2;
+ 	opacity: 0.5;
+ }
+
+ .myContact .mycvdiv .links .fa:hover {
+ 	opacity: 1;
+ }
+ /*-
 /*------------------------------------------*/
 #footer {
 	padding: 15px;
-	color: orange;
+	color: #8ccdc2;
 	bottom: 0;
 	right: 0;
 	width: 100%;
@@ -207,7 +279,7 @@ body {
 }
 
 #footer .fa {
-	color: orange;
+	color: #8ccdc2;
 	opacity: 0.5;
 }
 
@@ -224,7 +296,7 @@ body {
 	bottom: 20px;
 	right: 20px;
 	/*background-color: orange;*/ /*#FF9900*/
-	background: rgba(255,165,0,0.7);  /*orange*/
+	background: #8ccdc2;
 	width: 50px;
 	height: 50px;
 	display: block;
@@ -256,11 +328,12 @@ body {
 }
 
 #return-to-top:hover {
-	background: rgba(0,0,0,0.9);
+	/*background: rgba(0,0,0,0.9);*/
+	background: #0f0f0f;
 }
 
 #return-to-top:hover i {
-	color: orange;
+	color: #8ccdc2;
 	top: 5px;
 }
 
@@ -271,11 +344,12 @@ body {
 	#side-div {
 		position: fixed;
 		height: 100%;
-		width: 30%;
+		/*width: 30%;*/
+		width: 24%;
 		min-width: 300px;
 		top: 0;
 		bottom: 0;
-		color: orange;
+		color: #8ccdc2;
 		overflow: auto;
 		background-color: rgba(0,0,0,0.5);
 	}
@@ -313,7 +387,7 @@ body {
 
 	/*----------------mySection---------------*/
 	#mySection {
-		width: 67%;
+		width: 75%;
 		float: right;
 	}
 
@@ -336,15 +410,17 @@ body {
 	}
 
 	#profile .myPic img {
-		width: 30%;
+		width: 45%;
 		height: auto;
 		border-radius: 50%;
 	}
 
 	.box {
 		max-width: 100%;
-		background-color: rgba(0,0,0,0.5);
-		margin-bottom: 40px;
+		/*background-color: rgba(0,0,0,0.5);*/
+		/*background-color: #0f0f0f;*/
+		/*margin-bottom: 40px;*/
+		margin-bottom: 160px;
 		padding: 20px;
 	}
 
@@ -395,8 +471,14 @@ body {
 			height: auto;
 			transform: perspective(400px) rotateY(90deg);
 			font-family: "mont-alt";
-			background: rgb(32,35,45);
-			color: white;
+			/*background: rgb(32,35,45);*/
+			background: #00000080;
+			color: #70A098;
+		}
+
+		.capsdiv .capsdesc span {
+			margin: 2px;
+			line-height: 2.2;
 		}
 
 		.capsdiv:hover > .img {
@@ -410,7 +492,7 @@ body {
 		.capsdiv .capsdesc a:link,
 		.capsdiv .capsdesc a:visited {
 			text-decoration: none;
-			color: orange;
+			color: #6697A7;
 			opacity: 0.5;
 		}
 
@@ -430,7 +512,7 @@ body {
 		position: fixed;
 		width: 100%;
 		top: 0;
-		color: orange;
+		color: #8ccdc2;
 		background-color: rgba(0,0,0,0.5);
 	}
 
@@ -458,7 +540,7 @@ body {
 	}
 
 	.mobile .fa {
-		color: orange;
+		color: #8ccdc2;
 	}
 
 	#side-div #logo .links {
@@ -497,15 +579,17 @@ body {
 	}
 
 	#profile .myPic img {
-		width: 30%;
+		width: 45%;
 		height: auto;
 		border-radius: 50%;
 	}
 
 	.box {
 		max-width: none;
-		background-color: rgba(0,0,0,0.5);
-		margin-bottom: 40px;
+		/*background-color: rgba(0,0,0,0.5);*/
+		/*background-color: #0f0f0f;*/
+		/*margin-bottom: 40px;*/
+		margin-bottom: 160px;
 		padding: 20px;
 	}
 
@@ -555,8 +639,14 @@ body {
 			height: 100%;
 			transform: perspective(400px) rotateY(90deg);
 			font-family: "mont-alt";
-			background: rgb(32,35,45);
-			color: white;
+			/*background: rgb(32,35,45);*/
+			background: #00000080;
+			color: #70A098;
+		}
+
+		.capsdiv .capsdesc span {
+			margin: 2px;
+			line-height: 2.2;
 		}
 
 		.capsdiv:hover > .img {
@@ -570,7 +660,7 @@ body {
 		.capsdiv .capsdesc a:link,
 		.capsdiv .capsdesc a:visited {
 			text-decoration: none;
-			color: orange;
+			color: #6697A7;
 			opacity: 0.5;
 		}
 
@@ -591,7 +681,7 @@ body {
 		position: fixed;
 		width: 100%;
 		top: 0;
-		color: orange;
+		color: #8ccdc2;
 		background-color: rgba(0,0,0,0.5);
 	}
 
@@ -619,7 +709,7 @@ body {
 	}
 
 	.mobile .fa {
-		color: orange;
+		color: #8ccdc2;
 	}
 
 	#side-div #logo .links {
@@ -658,15 +748,17 @@ body {
 	}
 
 	#profile .myPic img {
-		width: 30%;
+		width: 50%;
 		height: auto;
 		border-radius: 50%;
 	}
 
 	.box {
 		max-width: none;
-		background-color: rgba(0,0,0,0.5);
-		margin-bottom: 40px;
+		/*background-color: rgba(0,0,0,0.5);*/
+		/*background-color: #0f0f0f;*/
+		/*margin-bottom: 40px;*/
+		margin-bottom: 160px;
 		padding: 20px;
 	}
 
@@ -699,8 +791,14 @@ body {
 				height: 100%;
 				transform: perspective(260px) rotateY(90deg);
 				font-family: "mont-alt";
-				background: rgb(32,35,45);
-				color: white;
+				/*background: rgb(32,35,45);*/
+				background: #00000080;
+				color: #70A098;
+			}
+
+			.capsdiv .capsdesc span {
+				margin: 2px;
+				line-height: 2.2;
 			}
 
 			.capsdiv:hover > .img {
@@ -732,7 +830,7 @@ body {
 		.capsdiv .capsdesc a:link,
 		.capsdiv .capsdesc a:visited {
 			text-decoration: none;
-			color: orange;
+			color: #6697A7;
 			opacity: 0.5;
 		}
 
@@ -753,7 +851,7 @@ body {
 		position: fixed;
 		width: 100%;
 		top: 0;
-		color: orange;
+		color: #8ccdc2;
 		background-color: rgba(0,0,0,0.5);
 	}
 
@@ -781,7 +879,7 @@ body {
 	}
 
 	.mobile .fa {
-		color: orange;
+		color: #8ccdc2;
 	}
 
 	#side-div #logo .links {
@@ -820,15 +918,17 @@ body {
 	}
 
 	#profile .myPic img {
-		width: 30%;
+		width: 50%;
 		height: auto;
 		border-radius: 50%;
 	}
 
 	.box {
 		max-width: none;
-		background-color: rgba(0,0,0,0.5);
-		margin-bottom: 40px;
+		/*background-color: rgba(0,0,0,0.5);*/
+		/*background-color: #0f0f0f;*/
+		/*margin-bottom: 40px;*/
+		margin-bottom: 160px;
 		padding: 20px;
 	}
 
@@ -860,8 +960,14 @@ body {
 				height: 100%;
 				transform: perspective(200px) rotateY(90deg);
 				font-family: "mont-alt";
-				background: rgb(32,35,45);
-				color: white;
+				/*background: rgb(32,35,45);*/
+				background: #00000080;
+				color: #70A098;
+			}
+
+			.capsdiv .capsdesc span {
+				margin: 2px;
+				line-height: 2.2;
 			}
 
 			.capsdiv:hover > .img {
@@ -893,7 +999,7 @@ body {
 		.capsdiv .capsdesc a:link,
 		.capsdiv .capsdesc a:visited {
 			text-decoration: none;
-			color: orange;
+			color: #6697A7;
 			opacity: 0.5;
 		}
 
@@ -939,5 +1045,11 @@ body {
 @media screen and (max-width: 1024px)  {
 	#logo h4 {
 		padding-right: 0;
+	}
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1024px) {
+	#mySection {
+		width: 67%;
 	}
 }
