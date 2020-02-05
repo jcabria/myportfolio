@@ -55,6 +55,7 @@ body {
 	position: relative;
 }
 
+
 .img-responsive {
 	width: 100%!important;
 	height: 100%!important;
@@ -111,6 +112,10 @@ body {
 @media screen and (max-width: 442px){
 	.nav li a {
 		padding: 4px;
+	}
+
+	body {
+		background-size: 900px 550px;
 	}
 }
 
