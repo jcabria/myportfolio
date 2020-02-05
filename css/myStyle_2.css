@@ -115,7 +115,9 @@ body {
 	}
 
 	body {
-		background-size: 900px 550px;
+		/*background-size: 900px 550px;*/
+		image-rendering: pixelated;
+		image-rendering: -webkit-optimize-contrast;
 	}
 }
 
