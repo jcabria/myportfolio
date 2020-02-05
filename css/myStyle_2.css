@@ -116,8 +116,14 @@ body {
 
 	body {
 		/*background-size: 900px 550px;*/
-		image-rendering: pixelated;
-		image-rendering: -webkit-optimize-contrast;
+		/*image-rendering: pixelated;
+		image-rendering: -webkit-optimize-contrast;*/
+		/*background-image: url('../image/bg3.jpeg');*/
+		background-image: linear-gradient(
+			rgba(0,0,0,0.4),
+			rgba(0,0,0,0.4)
+			),
+			url('../image/bg3.jpeg');
 	}
 }
 
