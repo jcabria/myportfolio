@@ -39,11 +39,12 @@
  }
 /*------------------------------------------*/
 body {
-	background-image: linear-gradient(
+	/*background-image: linear-gradient(
 		rgba(0,0,0,0.4),
 		rgba(0,0,0,0.4)
 		),
-		url('../image/bg1.jpeg');
+		url('../image/bg1.jpeg');*/
+	background-image: url('../image/bg1.jpeg');
 	background-size: cover;
 	/*background-color: rgba(0,0,0,0.8);*/
 	background-color: #1f1f1f;
